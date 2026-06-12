@@ -1,0 +1,39 @@
+{
+  "name": "valorant-ultrawide",
+  "version": "1.0.0",
+  "description": "Remove Valorant title bar and stretch window vertically",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --x64"
+  },
+  "keywords": [
+    "valorant",
+    "ultrawide",
+    "electron"
+  ],
+  "author": "",
+  "license": "ISC",
+  "build": {
+    "appId": "com.valorant.ultrawide",
+    "productName": "Valorant Ultrawide Fix",
+    "win": {
+      "target": "nsis",
+      "icon": "uwfix.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "dependencies": {
+    "koffi": "^3.0.2"
+  },
+  "devDependencies": {
+    "electron": "^42.4.0",
+    "electron-builder": "^26.15.2"
+  }
+}

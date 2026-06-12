@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valorant Window Fit</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <h1>Valorant Window Fit</h1>
+        <p>Removes the title bar and stretches Valorant to the top and bottom of your monitor.</p>
+      </header>
+
+      <section class="panel">
+        <label class="field-label" for="monitor-select">Monitor</label>
+        <select id="monitor-select"></select>
+      </section>
+
+      <section class="panel options">
+        <label class="checkbox">
+          <input id="auto-fit" type="checkbox" />
+          <span>Keep applying while Valorant is open</span>
+        </label>
+      </section>
+
+      <button id="fit-btn" class="stretch-btn" type="button">Remove Title Bar &amp; Fit</button>
+
+      <p id="status" class="status">Set Valorant to windowed mode, then click the button.</p>
+
+      <p class="discord-hint">For help contact <strong>@dualr6</strong> on Discord</p>
+    </main>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
